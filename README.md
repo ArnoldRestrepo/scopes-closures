@@ -27,3 +27,24 @@ Se refiere a que una funcion puede acceder a una funcion o variable fuera de ell
 El intérprete de JavaScript funciona desde el ámbito de ejecución actual y funciona hasta encontrar la variable en cuestión. Si la variable no se encuentra en ningún ámbito, se genera una excepción.
 
 Este tipo de búsqueda se llama ámbito léxico. El alcance de una variable se define por su ubicación dentro del código fuente, y las funciones anidadas tienen acceso a las variables declaradas en su alcance externo. No importa de dónde se llame una función, o incluso cómo se llama, su alcance léxico depende solo de dónde se declaró la función.
+
+### Function Scope
+
+Usamos la declaración de variables dentro de un Scope Local en el ámbito de una función
+
+- Las variables escritas con la palabra clave var pueden ser redeclaradas, pero esto a futuro puede darnos problemas, así que es mejor no usarla.
+
+- Las variables escritas con la palabra clave let no pueden ser redeclaradas, si lo haces mostrara un “error: esta variable ya ha sido declarada” , pero su valor puede ser reasignado:
+
+```javascript
+let fruit = 'apple';
+fruit = 'banana';
+
+console.log(fruit); // banana
+```
+
+- Las variables escritas con la palabra clave const no pueden ser redeclaradas o reasignadas, ya que const quiere decir que su valor será constante, es decir que no va a cambiar.
+
+### Block Scope
+
+Usamos la declaración de variables usando el Scope Local dentro de un bloque de código en el ámbito de una función. No podemos llamar o ejecutar las variables por fuera de ese bloque.
