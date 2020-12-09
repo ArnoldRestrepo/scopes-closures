@@ -47,4 +47,4 @@ console.log(fruit); // banana
 
 ### Block Scope
 
-Usamos la declaración de variables usando el Scope Local dentro de un bloque de código en el ámbito de una función. No podemos llamar o ejecutar las variables por fuera de ese bloque.
+Usamos la declaración de variables usando el Scope Local dentro de un bloque de código en el ámbito de una función. No podemos llamar o ejecutar las variables por fuera de ese bloque a menos que sea con var lo cual es una mala práctica.
