@@ -1,0 +1,22 @@
+{
+  "name": "scopes-closures",
+  "version": "0.1.0",
+  "description": "Curso de Closures y Scopes en Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArnoldRestrepo/scopes-closures.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "@restrepo_arnold",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArnoldRestrepo/scopes-closures/issues"
+  },
+  "homepage": "https://github.com/ArnoldRestrepo/scopes-closures#readme"
+}
