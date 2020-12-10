@@ -48,3 +48,11 @@ console.log(fruit); // banana
 ### Block Scope
 
 Usamos la declaración de variables usando el Scope Local dentro de un bloque de código en el ámbito de una función. No podemos llamar o ejecutar las variables por fuera de ese bloque a menos que sea con var lo cual es una mala práctica.
+
+## Closures
+
+Un closure es una función interna que tiene como acceso a el alcance de su función externa incluso después de que la función externa ejecute un return.
+
+Un closure es un tipo especial de objeto que combina dos cosas: **una función y el ámbito en que se creo la función**. Esto significa que puede recordar, acceder y leer argumentos de su función externa, incluso después de que esta halla finalizado.
+
+Pueden ser: **una función o un objeto de funciones**
