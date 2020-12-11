@@ -60,3 +60,15 @@ Pueden ser: **una función o un objeto de funciones**
 ### Variables privadas con Closures:
 
 JavaScript por su naturaleza no fomenta el uso de datos privados pero por medio de los Closures podemos crear valores que solo puedan ser accedidos por medio de métodos, que no van a estar disponibles fuera de esta función.
+
+## Hoisting
+
+Eleva las declaraciones, esto pasa en el momento en que se compila nuestro código antes de ser interpretado por el navegador. De esta forma podemos asignar nuestros valores o acceder a un valor que previamente no ha sido declarado dentro de esta estructura.
+
+El ‘levantamiento’ del que hablan es mas a fines didácticos y está bien, pero no es tan así, no es que FISICAMENTE levanta las declaraciones y las pone al principio como muchos explican. Lo que se hace en realidad es tomar ‘registros’ en memoria de donde está cada declaración(todo esto previo a que se ejecute el código en sí) y depende si es var, let, const o una función, JS va a asignarle referencias a cada una.Si es:
+
+- var : asigna la referencia undefined (si de acá viene el famoso undefined)
+- let/const: asigna la referencia uninitialized(declarado pero no inicializado)
+- función: guarda un registro con la función entera(por eso la podemos llamar antes de que este creada)
+
+JavaScript solo usa el hoisting en declaraciones y no en inicializaciones.
